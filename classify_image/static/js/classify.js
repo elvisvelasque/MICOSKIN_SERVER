@@ -84,7 +84,8 @@ loadStats = function(jsonData) {
           </div>
         </div>
       </div>`;
-      $("#stat-table").append(markup);
+    $("#stat-table").append(markup);
+
     }
   }
 }
