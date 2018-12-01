@@ -27,6 +27,8 @@ DEBUG = False
 ALLOWED_HOSTS = [
     'micoskin.herokuapp.com',
     '127.0.0.1',
+    '192.168.1.135',
+    '*',
 ]
 
 # Application definition
@@ -123,4 +125,4 @@ STATICFILES_DIRS = (
     os.path.join(BASE_DIR, 'classify_image/static'),
 )
 
-STATICFILES_STORAGE = 'whitenoise.django.GzipManifestStaticFilesStorage'
+STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
